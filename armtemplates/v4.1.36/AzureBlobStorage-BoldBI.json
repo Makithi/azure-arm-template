@@ -85,31 +85,31 @@
             "virtualApplications": [
               {
                 "virtualPath": "/",
-                "physicalPath": "site\\wwwroot\\IDP"
+                "physicalPath": "site\\wwwroot\\web"
               },
               {
                 "virtualPath": "/api",
-                "physicalPath": "site\\wwwroot\\IDP\\api"
+                "physicalPath": "site\\wwwroot\\api"
               },
               {
                 "virtualPath": "/ums",
-                "physicalPath": "site\\wwwroot\\IDP\\ums"
+                "physicalPath": "site\\wwwroot\\ums"
               },
               {
                 "virtualPath": "/bi",
-                "physicalPath": "site\\wwwroot\\Dashboard Server"
+                "physicalPath": "site\\wwwroot\\bi"
               },
               {
                 "virtualPath": "/bi/api",
-                "physicalPath": "site\\wwwroot\\Dashboard Server\\api"
+                "physicalPath": "site\\wwwroot\\bi\\api"
               },
               {
                 "virtualPath": "/bi/jobs",
-                "physicalPath": "site\\wwwroot\\Dashboard Server\\jobs"
+                "physicalPath": "site\\wwwroot\\bi\\jobs"
               },
               {
                 "virtualPath": "/bi/designer",
-                "physicalPath": "site\\wwwroot\\Dashboard Designer"
+                "physicalPath": "site\\wwwroot\\bi\\dataservice"
               }
             ]
           }
@@ -122,8 +122,8 @@
             "[resourceId('Microsoft.Web/Sites', parameters('WebAppName'))]"
           ],
           "properties": {
-            "RepoUrl": "https://github.com/Makithi/azure-arm-template.git",
-            "branch": "v3.3.88",
+            "RepoUrl": "https://github.com/Makithi/azure-arm-template",
+            "branch": "v4.1.36",
             "IsManualIntegration": true
           }
         },
