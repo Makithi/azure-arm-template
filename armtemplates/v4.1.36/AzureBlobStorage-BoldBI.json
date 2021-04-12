@@ -89,8 +89,7 @@
             "use32BitWorkerProcess": true,
             "webSocketsEnabled": true,
             "alwaysOn": true,
-            "remoteDebuggingEnabled": false
-        ],
+            "remoteDebuggingEnabled": false,
             "virtualApplications": [
               {
                 "virtualPath": "/",
