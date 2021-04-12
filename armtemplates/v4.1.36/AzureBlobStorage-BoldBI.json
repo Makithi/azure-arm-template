@@ -89,12 +89,7 @@
             "use32BitWorkerProcess": true,
             "webSocketsEnabled": true,
             "alwaysOn": true,
-            "remoteDebuggingEnabled": false,
-			"metadata": [
-            {
-                "name": "CURRENT_STACK",
-                "value": "dotnetcore"
-            }
+            "remoteDebuggingEnabled": false
         ],
             "virtualApplications": [
               {
@@ -166,7 +161,7 @@
             "log4net.Config": "logs\\log4net.config",
             "WEBSITE_DYNAMIC_CACHE": "0",
 			"WEBSITE_LOAD_USER_PROFILE":"1",
-			"WebAppName":"[concat('https://',parameters('WebAppName'), '.azurewebsites.net/')]"
+			"ApplicationUrl":"[concat('https://',parameters('WebAppName'), '.azurewebsites.net')]"
           }
         }
       ]
