@@ -77,11 +77,17 @@
             "displayName": "WebAppConfig"
           },
           "properties": {
-		    "CURRENT_STACK": "dotnetcore",
+            "netFrameworkVersion": "v4.0",
             "use32BitWorkerProcess": true,
             "webSocketsEnabled": true,
             "alwaysOn": true,
             "remoteDebuggingEnabled": false,
+			"metadata": [
+            {
+                "name": "CURRENT_STACK",
+                "value": "dotnetcore"
+            }
+        ],
             "virtualApplications": [
               {
                 "virtualPath": "/",
@@ -150,7 +156,8 @@
             "StorageType": "AzureBlob",
             "IsAzureApplication": "true",
             "log4net.Config": "logs\\log4net.config",
-            "WEBSITE_DYNAMIC_CACHE": "0"
+            "WEBSITE_DYNAMIC_CACHE": "0",
+			"WEBSITE_LOAD_USER_PROFILE":"1"
           }
         }
       ]
