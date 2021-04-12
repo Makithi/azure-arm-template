@@ -62,6 +62,14 @@
       },
       "properties": {
         "name": "[parameters('WebAppName')]",
+		"siteConfig": {
+            "metadata": [
+                {
+                    "name": "CURRENT_STACK",
+                    "value": "dotnetcore"
+                }
+            ]
+        },
         "clientAffinityEnabled": "false",
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms/', variables('WebAppSvcPlanName'))]"
       },
@@ -157,10 +165,26 @@
             "IsAzureApplication": "true",
             "log4net.Config": "logs\\log4net.config",
             "WEBSITE_DYNAMIC_CACHE": "0",
-			"WEBSITE_LOAD_USER_PROFILE":"1"
+			"WEBSITE_LOAD_USER_PROFILE":"1",
+			"WebAppName":"[concat('https://',parameters('WebAppName'), '.azurewebsites.net/')]",
           }
         }
-      ]
+      ],
+	  "resources": [
+ {
+    "name": "metadata",
+    "type": "config",
+    "apiVersion": "2018-11-01",
+    "dependsOn": [
+        "[resourceId('Microsoft.Web/sites', parameters('site_name'))]"
+    ],
+    "tags": {
+    },
+    "properties": {
+        "CURRENT_STACK": "dotnetcore"
+    }
+ }
+]
     },
     {
       "name": "[parameters('storageAccountName')]",
