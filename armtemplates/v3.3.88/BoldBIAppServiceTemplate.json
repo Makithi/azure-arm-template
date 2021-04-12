@@ -33,7 +33,7 @@
     }
   },
   "variables": {
-    "templatelink": "https://raw.githubusercontent.com/Makithi/azure-arm-template/master/armtemplates/v3.3.88/AzureBlobStorage-BoldBI.json"
+    "templatelink": "https://raw.githubusercontent.com/Makithi/azure-arm-template/armtemplates/armtemplates/v3.3.88/AzureBlobStorage-BoldBI.json"
   },
   "resources": [
     {

@@ -105,7 +105,7 @@
               },
               {
                 "virtualPath": "/bi",
-                "physicalPath": "site\\wwwroot\\bi"
+                "physicalPath": "site\\wwwroot\\bi\\web"
               },
               {
                 "virtualPath": "/bi/api",
