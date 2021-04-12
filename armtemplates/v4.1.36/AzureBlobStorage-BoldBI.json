@@ -166,25 +166,10 @@
             "log4net.Config": "logs\\log4net.config",
             "WEBSITE_DYNAMIC_CACHE": "0",
 			"WEBSITE_LOAD_USER_PROFILE":"1",
-			"WebAppName":"[concat('https://',parameters('WebAppName'), '.azurewebsites.net/')]",
+			"WebAppName":"[concat('https://',parameters('WebAppName'), '.azurewebsites.net/')]"
           }
         }
-      ],
-	  "resources": [
- {
-    "name": "metadata",
-    "type": "config",
-    "apiVersion": "2018-11-01",
-    "dependsOn": [
-        "[resourceId('Microsoft.Web/sites', parameters('WebAppName'))]"
-    ],
-    "tags": {
-    },
-    "properties": {
-        "CURRENT_STACK": "dotnetcore"
-    }
- }
-]
+      ]
     },
     {
       "name": "[parameters('storageAccountName')]",
