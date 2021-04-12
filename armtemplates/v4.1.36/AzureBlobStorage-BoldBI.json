@@ -77,7 +77,7 @@
             "displayName": "WebAppConfig"
           },
           "properties": {
-            "netFrameworkVersion": "v4.6",
+		    "CURRENT_STACK": "dotnetcore",
             "use32BitWorkerProcess": true,
             "webSocketsEnabled": true,
             "alwaysOn": true,
