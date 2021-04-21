@@ -148,12 +148,12 @@
             "displayName": "WebAppSettings"
           },
           "properties": {
-            "IdP:AzureBlobStorageAccountName": "[parameters('storageAccountName')]",
-            "IdP:AzureBlobServiceEndpoint": "[concat('https://',parameters('storageAccountName'), '.blob.core.windows.net/')]",
-            "IdP:AzureBlobStorageAccessKey": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName')), providers('Microsoft.Storage', 'storageAccounts').apiVersions[0]).keys[0].value]",
+            "IdP:AzureBlobStorageAccountName": "[toLower(parameters('storageAccountName'))]",
+            "IdP:AzureBlobServiceEndpoint": "[concat('https://',toLower(parameters('storageAccountName')), '.blob.core.windows.net/')]",
+            "IdP:AzureBlobStorageAccessKey": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', toLower(parameters('storageAccountName'))), providers('Microsoft.Storage', 'storageAccounts').apiVersions[0]).keys[0].value]",
             "IdP:AzureBlobContainerName": "boldbicontainer",
             "IdP:AzureBlobConnectionType": "https",
-            "IdP:AzureBlobStorageUri": "[concat('https://',parameters('storageAccountName'), '.blob.core.windows.net/')]",
+            "IdP:AzureBlobStorageUri": "[concat('https://',toLower(parameters('storageAccountName')), '.blob.core.windows.net/')]",
             "IdP:StorageType": "AzureBlob",
             "StorageType": "AzureBlob",
             "IsAzureApplication": "true",
@@ -166,7 +166,7 @@
       ]
     },
     {
-      "name": "[parameters('storageAccountName')]",
+      "name": "[toLower(parameters('storageAccountName'))]",
       "type": "Microsoft.Storage/storageAccounts",
       "location": "[resourceGroup().location]",
       "apiVersion": "2015-06-15",
