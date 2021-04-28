@@ -93,15 +93,15 @@
             "virtualApplications": [
               {
                 "virtualPath": "/",
-                "physicalPath": "site\\wwwroot\\web"
+                "physicalPath": "site\\wwwroot\\idp\\web"
               },
               {
                 "virtualPath": "/api",
-                "physicalPath": "site\\wwwroot\\api"
+                "physicalPath": "site\\wwwroot\\idp\\api"
               },
               {
                 "virtualPath": "/ums",
-                "physicalPath": "site\\wwwroot\\ums"
+                "physicalPath": "site\\wwwroot\\idp\\ums"
               },
               {
                 "virtualPath": "/bi",
@@ -119,7 +119,8 @@
                 "virtualPath": "/bi/designer",
                 "physicalPath": "site\\wwwroot\\bi\\dataservice"
               }
-            ]
+            ],
+			"http20Enabled": true
           }
         },
         {
