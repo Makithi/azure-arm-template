@@ -605,7 +605,7 @@
         </Dashboard>
       </Dashboards>
     </Category>
-    <!-- <Category>
+     <Category>
       <Name>Education</Name>
       <Description>Check our Sample dashboards.</Description>
       <Dashboards>
@@ -618,7 +618,7 @@
           <Features>Master Filter</Features>
         </Dashboard>
       </Dashboards>
-    </Category> -->
+    </Category> 
 	<Category>
 	  <Name>Hospitality</Name>
 	  <Description>Check our Sample dashboards.</Description>
@@ -773,7 +773,7 @@
         </Dashboard>
       </Dashboards>
     </Category>
-	<!--<Category>
+	<Category>
       <Name>Agile</Name>
       <Description>Check our Sample dashboards.</Description>
       <Dashboards>
@@ -786,7 +786,7 @@
           <Features>Master Filter, Trendline-Spline_Chart</Features>
         </Dashboard>
       </Dashboards>
-    </Category>-->
+    </Category>
     <Category>
       <Name>Agile</Name>
       <Description>Check our Sample dashboards.</Description>
@@ -801,7 +801,7 @@
         </Dashboard>
       </Dashboards>
     </Category>
-  <!--<Category>
+  <Category>
       <Name>Agile</Name>
       <Description>Check our Sample dashboards.</Description>
       <Dashboards>
@@ -828,7 +828,7 @@
           <Features>Master Filter,Drill_Down-Column_Chart</Features>
         </Dashboard>
       </Dashboards>
-    </Category> -->
+    </Category>
 	<Category>
       <Name>Agile</Name>
       <Description>Check our Sample dashboards.</Description>
@@ -941,7 +941,7 @@
         </Dashboard>
       </Dashboards>
     </Category>
-	<!--<Category>
+	<Category>
       <Name>Support</Name>
       <Description>Check our Sample dashboards.</Description>
       <Dashboards>
@@ -955,7 +955,7 @@
         </Dashboard>
       </Dashboards>
     </Category>
-	<Category>
+	<!-- <Category>
       <Name>Finance</Name>
       <Description>Check our Sample dashboards.</Description>
       <Dashboards>

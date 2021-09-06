@@ -545,7 +545,6 @@ function SaveUserPreference() {
                 if (result.Data.status) {
                     if (result.Data.isTenantUserLanguage) {
                         $("<form action='" + result.Data.returnUrl + "'><input type='hidden' name='token' value='" + result.Data.token + "'></form>").appendTo('body').submit().remove();
-                        location.reload();
                     } else {
                         ShowWaitingProgress("#content-area", "hide");
                         SuccessAlert(window.Server.App.LocalizationContent.UpdateAccountPreference, result.Data.value, 7000);

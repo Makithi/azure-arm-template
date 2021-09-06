@@ -11,7 +11,7 @@
     var productName = ViewBag.TenantType == TenantType.BoldBIOnPremise ? "Embedded" : "On-Premise";
     var helpLinkData = ViewBag.TenantType == TenantType.BoldBIOnPremise ? "Embedded BI" : "Enterprise Reporting";
     var pathbase = Context.Request.PathBase;
-    var serverUserHelp = $"[[[Please refer to <a href='{HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.ServerDataStoreConfiguration)}'>this</a> documentation to know about what are the permissions need to be assigned to allow {helpLinkData} to connect and use the database.]]]";
+    var serverUserHelp = $"[[[Please refer to <a target='_blank' href='{HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.IdDatabaseConfiguration, ViewBag.TenantType)}'>this</a> documentation to know about what are the permissions need to be assigned to allow {helpLinkData} to connect and use the database.]]]";
     var sqlParameter = HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.MSSQL_Connection_Parameters);
     var postgresSQLParameter = HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.PostgreSQL_Connection_Parameters);
     var mySQLParameter = HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.MySQL_Connection_Parameters);

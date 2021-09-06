@@ -2,7 +2,7 @@
     var productType = GlobalAppSettings.BrandingDisplayName == AppBranding.Bold.DisplayName ? "dashboards" : "reports";
     var productName = ViewBag.TenantType == TenantType.BoldBIOnPremise ? "Embedded BI" : "Enterprise Reporting";
     var serverHelp = $"[[[This database is to store metadata such as {productType}, users, and their permissions.]]]";
-    var serverUserHelp = $"[[[Please refer to <a target='_blank' href='{HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.ServerDataStoreConfiguration)}'>this</a> documentation to know about what are the permissions need to be assigned to allow {productName} to connect and use the database.]]]";
+    var serverUserHelp = $"[[[Please refer to <a target='_blank' href='{HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.ServerDatabaseConfiguration, ViewBag.TenantType)}'>this</a> documentation to know about what are the permissions need to be assigned to allow {productName} to connect and use the database.]]]";
     var sqlParameter = HelpSiteManager.GetHelpSiteUrl(HelpSiteUrlNames.MSSQL_Connection_Parameters);
 }
 <div class="system-settings-page-container col-lg-5 col-md-5 col-sm-5 col-xs-5" id="system-settings-db-selection-container">

@@ -4142,7 +4142,7 @@ $(document).ready(function () {
         $(".site-url").attr("data-content", $(".site-domain").html() + $(".site-default-text").text() + $(".site-id-name").text());
     });
 
-    $(document).on("keyup", "#input-domain", function (event) {
+    $(document).on("change keyup", "#input-domain", function (event) {
         var enableSsl = $("#enable-ssl").val();
         if (actionType.toLowerCase() == "edit") {
             var dropdownValue = $("#tenant-type").val();
